@@ -1,0 +1,7 @@
+# Normaliza quebras de linha: LF no repositorio, nativo no checkout.
+# Evita que o mesmo arquivo apareca como "todo alterado" entre Windows/Linux/macOS.
+* text=auto
+
+# Markdown e SVG sao texto: garante diff legivel em vez de "arquivo binario".
+*.md  text diff=markdown
+*.svg text
