@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | FixAqui</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="dashboard.html" aria-label="FixAqui - dashboard">FixAqui</a>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a class="nav-link nav-link-active" href="dashboard.html">Início</a>
+            <a class="nav-link" href="perfil.html">Criar conta</a>
+            <a class="button button-small button-outline" href="login.html">Sair</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" aria-labelledby="dashboard-title">
+            <div class="container hero-content">
+                <div>
+                    <span class="eyebrow">Serviços para você</span>
+                    <h1 id="dashboard-title">O que você precisa resolver hoje?</h1>
+                    <p>Encontre profissionais para pequenos serviços perto de você.</p>
+                </div>
+
+                <form class="search-form" action="dashboard.html" method="get" role="search">
+                    <label class="sr-only" for="busca">Pesquisar serviço</label>
+                    <input class="input search-input" type="search" id="busca" name="busca" placeholder="Ex.: eletricista, pintura, informática">
+                    <button class="button button-primary" type="submit">Buscar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section container" aria-labelledby="categorias-title">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">Encontre o que precisa</span>
+                    <h2 id="categorias-title">Categorias</h2>
+                </div>
+            </div>
+
+            <div class="category-grid">
+                <a class="category-card" href="#profissionais">
+                    <span class="category-icon" aria-hidden="true">🔧</span>
+                    <span class="category-title">Reparos</span>
+                    <span class="category-text">Pequenos consertos</span>
+                </a>
+
+                <a class="category-card" href="#profissionais">
+                    <span class="category-icon" aria-hidden="true">💡</span>
+                    <span class="category-title">Elétrica</span>
+                    <span class="category-text">Instalações e manutenção</span>
+                </a>
+
+                <a class="category-card" href="#profissionais">
+                    <span class="category-icon" aria-hidden="true">🚿</span>
+                    <span class="category-title">Hidráulica</span>
+                    <span class="category-text">Canos e encanamentos</span>
+                </a>
+
+                <a class="category-card" href="#profissionais">
+                    <span class="category-icon" aria-hidden="true">🧹</span>
+                    <span class="category-title">Limpeza</span>
+                    <span class="category-text">Limpeza residencial</span>
+                </a>
+
+                <a class="category-card" href="#profissionais">
+                    <span class="category-icon" aria-hidden="true">💻</span>
+                    <span class="category-title">Informática</span>
+                    <span class="category-text">Computadores e suporte</span>
+                </a>
+
+                <a class="category-card" href="#profissionais">
+                    <span class="category-icon" aria-hidden="true">🎨</span>
+                    <span class="category-title">Pintura</span>
+                    <span class="category-text">Pintura e acabamento</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="profissionais" aria-labelledby="profissionais-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">Profissionais</span>
+                        <h2 id="profissionais-title">Profissionais em destaque</h2>
+                    </div>
+                    <a class="text-link" href="#profissionais">Ver todos</a>
+                </div>
+
+                <div class="professional-grid">
+                    <article class="professional-card">
+                        <div class="professional-avatar" aria-hidden="true">JS</div>
+                        <div class="professional-content">
+                            <span class="tag">Elétrica</span>
+                            <h3>João Silva</h3>
+                            <p>Instalações elétricas residenciais e comerciais.</p>
+                            <div class="rating" aria-label="Avaliação 4,8 de 5">
+                                <span aria-hidden="true">★★★★★</span>
+                                <strong>4,8</strong>
+                                <span>(120 avaliações)</span>
+                            </div>
+                            <a class="button button-primary button-full" href="perfil.html">Ver perfil</a>
+                        </div>
+                    </article>
+
+                    <article class="professional-card">
+                        <div class="professional-avatar" aria-hidden="true">CS</div>
+                        <div class="professional-content">
+                            <span class="tag">Elétrica</span>
+                            <h3>Carlos Souza</h3>
+                            <p>Manutenção, tomadas e iluminação.</p>
+                            <div class="rating" aria-label="Avaliação 4,7 de 5">
+                                <span aria-hidden="true">★★★★★</span>
+                                <strong>4,7</strong>
+                                <span>(86 avaliações)</span>
+                            </div>
+                            <a class="button button-primary button-full" href="perfil.html">Ver perfil</a>
+                        </div>
+                    </article>
+
+                    <article class="professional-card">
+                        <div class="professional-avatar" aria-hidden="true">MO</div>
+                        <div class="professional-content">
+                            <span class="tag">Elétrica</span>
+                            <h3>Marcos Oliveira</h3>
+                            <p>Projetos e manutenção elétrica.</p>
+                            <div class="rating" aria-label="Avaliação 4,9 de 5">
+                                <span aria-hidden="true">★★★★★</span>
+                                <strong>4,9</strong>
+                                <span>(154 avaliações)</span>
+                            </div>
+                            <a class="button button-primary button-full" href="perfil.html">Ver perfil</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 FixAqui. Projeto acadêmico.</p>
+    </footer>
+</body>
+</html>

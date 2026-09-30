@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta | FixAqui</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="auth-page">
+    <header class="site-header">
+        <a class="brand" href="login.html" aria-label="FixAqui - página inicial">FixAqui</a>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a class="nav-link" href="login.html">Entrar</a>
+            <a class="nav-link nav-link-active" href="perfil.html">Criar conta</a>
+            <a class="nav-link" href="dashboard.html">Explorar serviços</a>
+        </nav>
+    </header>
+
+    <main class="auth-main">
+        <section class="auth-card" aria-labelledby="cadastro-title">
+            <div class="auth-heading">
+                <span class="eyebrow">Comece no FixAqui</span>
+                <h1 id="cadastro-title">Crie a sua conta</h1>
+                <p>Cadastre-se para encontrar profissionais e solicitar serviços com facilidade.</p>
+            </div>
+
+            <form class="form" action="dashboard.html" method="get">
+                <div class="form-group">
+                    <label for="nome">Nome completo</label>
+                    <input class="input" type="text" id="nome" name="nome" placeholder="Digite seu nome completo" autocomplete="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input class="input" type="email" id="email" name="email" placeholder="seuemail@exemplo.com" autocomplete="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input class="input" type="password" id="senha" name="senha" placeholder="Crie uma senha" autocomplete="new-password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmar-senha">Confirme sua senha</label>
+                    <input class="input" type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Digite a senha novamente" autocomplete="new-password" required>
+                </div>
+
+                <button class="button button-primary button-full" type="submit">Criar conta</button>
+            </form>
+
+            <p class="auth-footer-text">
+                Já possui uma conta?
+                <a href="login.html">Entrar</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 FixAqui. Projeto acadêmico.</p>
+    </footer>
+</body>
+</html>

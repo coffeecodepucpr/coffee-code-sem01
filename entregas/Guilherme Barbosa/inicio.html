@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Início — Shelf Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="sidebar">
+      <div class="marca">
+        <span class="marca__icone" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/>
+          </svg>
+        </span>
+        <div>
+          <span class="marca__nome">Shelf Hub</span>
+          <span class="marca__slogan">Tracker Cultural</span>
+        </div>
+      </div>
+
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a class="menu__link" href="inicio.html" aria-current="page">Início</a></li>
+          <li><a class="menu__link" href="biblioteca.html">Biblioteca</a></li>
+          <li><a class="menu__link" href="#">Adicionar obra</a></li>
+          <li><a class="menu__link" href="#">Favoritos</a></li>
+          <li><a class="menu__link" href="#">Estatísticas</a></li>
+        </ul>
+      </nav>
+
+      <div class="usuario">
+        <span class="usuario__avatar" aria-hidden="true"></span>
+        <div>
+          <span class="usuario__nome">Usuário</span>
+          <span class="usuario__conta">Minha conta</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="conteudo">
+      <div class="conteudo__cabecalho">
+        <h1 class="titulo-pagina">Olá, bem-vindo de volta</h1>
+        <a class="botao botao--primario" href="#">Adicionar obra</a>
+      </div>
+
+      <section class="secao" aria-labelledby="titulo-resumo">
+           <h2 class="secao__titulo" id="titulo-andamento">Próximas obras</h2>
+        <ul class="resumo">
+          <li class="card resumo__item">
+            <span class="resumo__rotulo">Total de obras</span>
+            <span class="resumo__valor">47</span>
+          </li>
+          <li class="card resumo__item">
+            <span class="resumo__rotulo">Consumidas</span>
+            <span class="resumo__valor">32</span>
+          </li>
+          <li class="card resumo__item">
+            <span class="resumo__rotulo">Em andamento</span>
+            <span class="resumo__valor">8</span>
+          </li>
+          <li class="card resumo__item">
+            <span class="resumo__rotulo">Planejadas</span>
+            <span class="resumo__valor">5</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="secao" aria-labelledby="titulo-andamento">
+        <h2 class="secao__titulo" id="titulo-andamento">Continuar de onde parou</h2>
+        <ul class="lista-obras">
+          <li class="card obra-linha">
+            <div>
+              <span class="obra-linha__nome">Sapiens</span>
+              <span class="obra-linha__meta">Livro · Não-ficção</span>
+            </div>
+            <span class="badge badge--em-andamento">Em andamento</span>
+          </li>
+          <li class="card obra-linha">
+            <div>
+              <span class="obra-linha__nome">Serial</span>
+              <span class="obra-linha__meta">Podcast · True Crime</span>
+            </div>
+            <span class="badge badge--planejado">Planejado</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+# Histórias de Usuário
+## HU01 — Realizar login
+
+**Como** estudante,  
+**quero** realizar login no sistema,  
+**para** acessar minhas informações de estudos.
+
+### Critérios de aceitação
+- O sistema deve possuir campos para login e senha.
+- Os campos devem ser obrigatórios.
+- Com dados válidos, o estudante deve ser direcionado ao Dashboard.
+- Com dados inválidos, o sistema deve apresentar uma mensagem de erro.
+
+---
+
+## HU02 — Visualizar minhas matérias
+
+**Como** estudante,  
+**quero** visualizar minhas matérias,  
+**para** saber quais disciplinas fazem parte da minha rotina de estudos.
+
+### Critérios de aceitação
+- O Dashboard deve apresentar a área "Minhas matérias".
+- As matérias devem ser apresentadas de forma organizada.
+- O estudante deve conseguir identificar cada matéria facilmente.
+
+---
+
+## HU03 — Visualizar tarefas pendentes
+
+**Como** estudante,  
+**quero** visualizar minhas tarefas pendentes,  
+**para** saber quais atividades ainda preciso realizar.
+
+### Critérios de aceitação
+- O Dashboard deve apresentar as tarefas ainda não concluídas.
+- Cada tarefa deve apresentar pelo menos nome, matéria e prazo.
+- As tarefas devem ser identificadas como pendentes.
+
+---
+
+## HU04 — Visualizar tarefas concluídas
+
+**Como** estudante,  
+**quero** visualizar minhas tarefas concluídas,  
+**para** acompanhar o que já foi realizado.
+
+### Critérios de aceitação
+- O sistema deve possuir uma área para tarefas concluídas.
+- Uma tarefa marcada como concluída deve deixar de aparecer como pendente.
+- A tarefa deve permanecer disponível na área de concluídas.
+
+---
+
+## HU05 — Adicionar uma tarefa
+
+**Como** estudante,  
+**quero** adicionar uma nova tarefa,  
+**para** organizar uma atividade que preciso realizar.
+
+### Critérios de aceitação
+- O sistema deve possuir uma opção "Adicionar tarefa".
+- O formulário deve solicitar nome da tarefa.
+- O formulário deve solicitar a matéria.
+- O formulário deve solicitar o prazo.
+- Os campos obrigatórios devem ser validados.
+- Após salvar, a tarefa deve aparecer entre as tarefas pendentes.
+
+---
+
+## HU06 — Acompanhar meu progresso
+
+**Como** estudante,  
+**quero** visualizar meu progresso,  
+**para** acompanhar minha evolução nas atividades.
+
+### Critérios de aceitação
+- O Dashboard deve apresentar uma área de progresso.
+- O progresso deve considerar as tarefas realizadas.
+- As informações devem ser apresentadas de forma visual e simples.
+
+---
+
+## HU07 — Concluir uma tarefa
+
+**Como** estudante,  
+**quero** marcar uma tarefa como concluída,  
+**para** registrar que finalizei a atividade.
+
+### Critérios de aceitação
+- Cada tarefa pendente deve possuir uma ação para conclusão.
+- Ao concluir, a tarefa deve ser retirada da lista de pendentes.
+- A tarefa deve aparecer na lista de concluídas.
+- O progresso deve ser atualizado.
+

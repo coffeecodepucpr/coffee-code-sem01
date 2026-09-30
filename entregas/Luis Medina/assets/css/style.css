@@ -1,0 +1,616 @@
+/* ==================== Design System ==================== */
+
+:root {
+    /* Cores */
+    --color-primary: #2563eb;
+    --color-primary-hover: #1d4ed8;
+    --color-primary-text: #2563eb;
+
+    --color-background: #f8fafc;
+    --color-surface: #ffffff;
+
+    --color-text: #172033;
+    --color-text-muted: #64748b;
+
+    --color-border: #e2e8f0;
+
+    --color-success: #15803d;
+    --color-success-background: #dcfce7;
+
+    --color-warning: #b45309;
+    --color-warning-background: #fef3c7;
+
+    --color-error: #b91c1c;
+    --color-error-background: #fee2e2;
+
+    --color-neutral: #475569;
+    --color-neutral-background: #e2e8f0;
+
+    /* Espaçamentos */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+
+    /* Bordas */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    /* Outros */
+    --container-width: 1100px;
+}
+
+
+/* ==================== Dark Mode ==================== */
+
+[data-theme="dark"] {
+    --color-background: #0f172a;
+    --color-surface: #1e293b;
+    --color-primary-text: #60a5fa;
+
+    --color-text: #f8fafc;
+    --color-text-muted: #cbd5e1;
+
+    --color-border: #334155;
+
+    --color-success: #86efac;
+    --color-success-background: #14532d;
+
+    --color-warning: #fde68a;
+    --color-warning-background: #78350f;
+
+    --color-error: #fca5a5;
+    --color-error-background: #7f1d1d;
+
+    --color-neutral: #cbd5e1;
+    --color-neutral-background: #334155;
+}
+
+.theme-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    background-color: transparent;
+    color: var(--color-text);
+
+    font-size: 1.2rem;
+
+    cursor: pointer;
+}
+
+/* ==================== Base ==================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+.container {
+  width: min(100% - 32px, var(--container-width));
+  margin: 0 auto;
+}
+
+/* ==================== Header ==================== */
+
+.header {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-content {
+  min-height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--spacing-lg);
+}
+
+.logo {
+  color: var(--color-primary-text);
+
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  gap: var(--spacing-lg);
+}
+
+.nav-link {
+  padding: var(--spacing-sm) 0;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-primary-text);
+}
+
+/* ==================== Main ==================== */
+
+.main {
+  padding: var(--spacing-xxl) 0;
+}
+
+/* ==================== Products Header ==================== */
+
+.products-header {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--spacing-lg);
+
+  margin-bottom: var(--spacing-xl);
+}
+
+.products-header h1 {
+  margin-bottom: var(--spacing-sm);
+
+  font-size: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+}
+
+.products-header p {
+  margin-bottom: 0;
+
+  color: var(--color-text-muted);
+}
+
+/* ==================== Buttons ==================== */
+
+.button {
+  min-height: 44px;
+
+  padding: var(--spacing-sm) var(--spacing-md);
+
+  border: 0;
+  border-radius: var(--radius-md);
+
+  font-weight: 600;
+}
+
+.button-primary {
+  align-self: flex-start;
+
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* ==================== Products ==================== */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: var(--spacing-md);
+}
+
+/* ==================== Product Card ==================== */
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--spacing-md);
+
+  padding: var(--spacing-md);
+
+  background-color: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.product-card:hover {
+  border-color: #cbd5e1;
+
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+
+  transform: translateY(-2px);
+}
+
+/* ==================== Product Image ==================== */
+
+.product-image {
+  min-height: 160px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-md);
+
+  color: var(--color-text-muted);
+  font-weight: 600;
+
+  background-color: #f8fafc;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* ==================== Product Info ==================== */
+
+.product-info {
+  position: relative;
+
+  flex: 1;
+}
+
+.product-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: var(--spacing-md);
+}
+
+.product-top h2 {
+  margin-bottom: var(--spacing-xs);
+
+  font-size: 1.05rem;
+}
+
+.product-store {
+  display: inline-block;
+
+  margin-bottom: var(--spacing-md);
+
+  color: var(--color-text-muted);
+
+  font-size: 0.875rem;
+}
+
+.product-store:hover {
+  color: var(--color-primary);
+}
+
+.product-price {
+  margin-bottom: var(--spacing-sm);
+
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* ==================== Product Details ==================== */
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: var(--spacing-sm);
+
+  color: var(--color-text-muted);
+
+  font-size: 0.875rem;
+}
+
+.status {
+  padding: var(--spacing-xs) var(--spacing-sm);
+
+  border-radius: 999px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-warning {
+  background-color: var(--color-warning-background);
+  color: var(--color-warning);
+}
+
+.status-success {
+  background-color: var(--color-success-background);
+  color: var(--color-success);
+}
+
+.status-error {
+  background-color: var(--color-error-background);
+  color: var(--color-error);
+}
+
+.status-neutral {
+  background-color: var(--color-neutral-background);
+  color: var(--color-neutral);
+}
+
+.last-update {
+  margin-top: var(--spacing-md);
+  margin-bottom: 0;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+/* ==================== Product Menu ==================== */
+
+.menu-button {
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+
+  border: 0;
+  border-radius: var(--radius-sm);
+
+  background-color: transparent;
+
+  color: var(--color-text-muted);
+
+  font-size: 1.25rem;
+}
+
+.menu-button:hover {
+  background-color: var(--color-background);
+}
+
+/* ==================== Modal ==================== */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--spacing-md);
+
+    background-color: rgba(15, 23, 42, 0.45);
+
+    z-index: 1000;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal {
+    width: 100%;
+    max-width: 560px;
+
+    padding: var(--spacing-lg);
+
+    background-color: var(--color-surface);
+
+    border-radius: var(--radius-lg);
+}
+
+
+/* ==================== Modal Header ==================== */
+
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: var(--spacing-md);
+
+    margin-bottom: var(--spacing-lg);
+}
+
+.modal-header h2 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.modal-header p {
+    margin-bottom: 0;
+
+    color: var(--color-text-muted);
+}
+
+.modal-close {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    border: 0;
+    border-radius: var(--radius-sm);
+
+    background-color: transparent;
+
+    color: var(--color-text-muted);
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background-color: var(--color-background);
+}
+
+
+/* ==================== Form ==================== */
+
+.product-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--spacing-lg);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--spacing-sm);
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.optional {
+    color: var(--color-text-muted);
+
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.form-group input {
+    width: 100%;
+    min-height: 44px;
+
+    padding: 0 var(--spacing-md);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    background-color: var(--color-surface);
+
+    color: var(--color-text);
+
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: var(--color-primary);
+}
+
+.form-help {
+    color: var(--color-text-muted);
+
+    line-height: 1.5;
+}
+
+
+/* ==================== Form Actions ==================== */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: var(--spacing-sm);
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: var(--color-text);
+
+    border: 1px solid var(--color-border);
+}
+
+.button-secondary:hover {
+    background-color: var(--color-background);
+}
+
+/* ==================== Accessibility ==================== */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* ==================== Responsive ==================== */
+
+@media (min-width: 768px) {
+  .products-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .button-primary {
+    align-self: auto;
+  }
+
+  .product-card {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .product-image {
+    width: 180px;
+    min-width: 180px;
+    min-height: 140px;
+  }
+
+  .last-update {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    text-align: right;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    padding: 64px 0;
+  }
+
+  .product-card {
+    padding: var(--spacing-lg);
+  }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biblioteca — Shelf Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="sidebar">
+      <div class="marca">
+        <span class="marca__icone" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/>
+          </svg>
+        </span>
+        <div>
+          <span class="marca__nome">Shelf Hub</span>
+          <span class="marca__slogan">Tracker Cultural</span>
+        </div>
+      </div>
+
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a class="menu__link" href="inicio.html">Início</a></li>
+          <li><a class="menu__link" href="biblioteca.html" aria-current="page">Biblioteca</a></li>
+          <li><a class="menu__link" href="#">Adicionar obra</a></li>
+          <li><a class="menu__link" href="#">Favoritos</a></li>
+          <li><a class="menu__link" href="#">Estatísticas</a></li>
+        </ul>
+      </nav>
+
+      <div class="usuario">
+        <span class="usuario__avatar" aria-hidden="true"></span>
+        <div>
+          <span class="usuario__nome">Usuário</span>
+          <span class="usuario__conta">Minha conta</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="conteudo">
+      <div class="conteudo__cabecalho">
+        <div class="titulo-grupo">
+          <h1 class="titulo-pagina">Biblioteca</h1>
+          <span class="contador">6 obras</span>
+        </div>
+        <form class="busca" role="search">
+          <label class="sr-only" for="busca">Pesquisar obras</label>
+          <input class="campo__input" type="search" id="busca" placeholder="Pesquisar obras...">
+        </form>
+      </div>
+
+      <form class="card filtros" aria-label="Filtros e ordenação">
+        <div class="campo">
+          <label class="campo__label" for="filtro-tipo">Tipo</label>
+          <select class="campo__input" id="filtro-tipo">
+            <option>Todos</option>
+            <option>Filme</option>
+            <option>Série</option>
+            <option>Livro</option>
+            <option>Videogame</option>
+            <option>Podcast</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label class="campo__label" for="filtro-genero">Gênero</label>
+          <select class="campo__input" id="filtro-genero">
+            <option>Todos os gêneros</option>
+            <option>Drama</option>
+            <option>Ficção</option>
+            <option>Ficção Científica</option>
+            <option>Não-ficção</option>
+            <option>RPG</option>
+            <option>True Crime</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label class="campo__label" for="filtro-status">Status</label>
+          <select class="campo__input" id="filtro-status">
+            <option>Todos os status</option>
+            <option>Planejado</option>
+            <option>Em andamento</option>
+            <option>Consumido</option>
+            <option>Abandonado</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label class="campo__label" for="filtro-nota">Nota</label>
+          <select class="campo__input" id="filtro-nota">
+            <option>Qualquer nota</option>
+            <option>5 estrelas</option>
+            <option>4 estrelas ou mais</option>
+            <option>3 estrelas ou mais</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label class="campo__label" for="ordenar">Ordenar por</label>
+          <select class="campo__input" id="ordenar">
+            <option>Nome (A-Z)</option>
+            <option>Nome (Z-A)</option>
+            <option>Mais recentes</option>
+            <option>Mais antigas</option>
+            <option>Maior nota</option>
+            <option>Menor nota</option>
+          </select>
+        </div>
+        <label class="filtros__favoritos">
+          <input type="checkbox">
+          Apenas favoritos
+        </label>
+      </form>
+
+      <ul class="grade-obras">
+      <li>
+        <article class="card obra">
+          <div class="obra__capa" aria-hidden="true">1</div>
+          <div class="obra__topo">
+            <p class="obra__tags"><span class="tag">Livro</span><span class="tag">Ficção</span></p>
+            <button class="favorito" type="button" aria-pressed="false" aria-label="Adicionar 1984 aos favoritos"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+          </div>
+          <h3 class="obra__titulo"><a class="obra__link" href="#">1984</a></h3>
+          <div class="obra__rodape">
+            <span class="badge badge--planejado">Planejado</span>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="card obra">
+          <div class="obra__capa" aria-hidden="true">B</div>
+          <div class="obra__topo">
+            <p class="obra__tags"><span class="tag">Série</span><span class="tag">Drama</span></p>
+            <button class="favorito" type="button" aria-pressed="true" aria-label="Remover Breaking Bad dos favoritos"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+          </div>
+          <h3 class="obra__titulo"><a class="obra__link" href="#">Breaking Bad</a></h3>
+          <div class="obra__rodape">
+            <span class="badge badge--consumido">Consumido</span>
+          <span class="estrelas"><span aria-hidden="true">★★★★★</span><span class="sr-only">Nota 5 de 5</span></span>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="card obra">
+          <div class="obra__capa" aria-hidden="true">C</div>
+          <div class="obra__topo">
+            <p class="obra__tags"><span class="tag">Videogame</span><span class="tag">RPG</span></p>
+            <button class="favorito" type="button" aria-pressed="false" aria-label="Adicionar Cyberpunk 2077 aos favoritos"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+          </div>
+          <h3 class="obra__titulo"><a class="obra__link" href="#">Cyberpunk 2077</a></h3>
+          <div class="obra__rodape">
+            <span class="badge badge--abandonado">Abandonado</span>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="card obra">
+          <div class="obra__capa" aria-hidden="true">I</div>
+          <div class="obra__topo">
+            <p class="obra__tags"><span class="tag">Filme</span><span class="tag">Ficção Científica</span></p>
+            <button class="favorito" type="button" aria-pressed="true" aria-label="Remover Interestelar dos favoritos"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+          </div>
+          <h3 class="obra__titulo"><a class="obra__link" href="#">Interestelar</a></h3>
+          <div class="obra__rodape">
+            <span class="badge badge--consumido">Consumido</span>
+          <span class="estrelas"><span aria-hidden="true">★★★★★</span><span class="sr-only">Nota 5 de 5</span></span>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="card obra">
+          <div class="obra__capa" aria-hidden="true">S</div>
+          <div class="obra__topo">
+            <p class="obra__tags"><span class="tag">Livro</span><span class="tag">Não-ficção</span></p>
+            <button class="favorito" type="button" aria-pressed="false" aria-label="Adicionar Sapiens aos favoritos"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+          </div>
+          <h3 class="obra__titulo"><a class="obra__link" href="#">Sapiens</a></h3>
+          <div class="obra__rodape">
+            <span class="badge badge--em-andamento">Em andamento</span>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="card obra">
+          <div class="obra__capa" aria-hidden="true">S</div>
+          <div class="obra__topo">
+            <p class="obra__tags"><span class="tag">Podcast</span><span class="tag">True Crime</span></p>
+            <button class="favorito" type="button" aria-pressed="false" aria-label="Adicionar Serial aos favoritos"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></button>
+          </div>
+          <h3 class="obra__titulo"><a class="obra__link" href="#">Serial</a></h3>
+          <div class="obra__rodape">
+            <span class="badge badge--planejado">Planejado</span>
+          </div>
+        </article>
+      </li>
+      </ul>
+    </main>
+  </div>
+</body>
+</html>
