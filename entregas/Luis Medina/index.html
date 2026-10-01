@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="pt-br" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Estom</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ==================== Navbar ==================== -->
+    <header class="header">
+      <div class="container header-content">
+        <a href="index.html" class="logo">Estom</a>
+        <nav class="navigation" aria-label="Navegação principal">
+          <a href="index.html" class="nav-link active"> Meus Produtos </a>
+          <button
+            class="theme-button"
+            id="theme-button"
+            type="button"
+            aria-label="Alterar tema"
+          >
+            ☾
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- ==================== Main ==================== -->
+
+    <main class="main">
+      <div class="container">
+        <!-- Cabeçalho da página -->
+        <section class="products-header">
+          <div>
+            <h1>Meus Produtos</h1>
+            <p>Acompanhe os preços dos seus produtos em um só lugar.</p>
+          </div>
+          <button class="button button-primary" id="open-modal">
+            + Adicionar produto
+          </button>
+        </section>
+        <!-- ==================== Produtos ==================== -->
+
+        <section class="products-section">
+          <div class="products-grid">
+            <!-- Produto 1 -->
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="assets/images/Foto monitor.webp" alt="Monitor" />
+              </div>
+
+              <div class="product-info">
+                <div class="product-top">
+                  <h2>Monitor Samsung Odyssey G5</h2>
+
+                  <button
+                    class="menu-button"
+                    aria-label="Opções do Monitor Samsung Odyssey G5"
+                  >
+                    ⋮
+                  </button>
+                </div>
+
+                <p class="product-store">Mercado Livre</p>
+
+                <p class="product-price">R$ 829,90</p>
+
+                <div class="product-details">
+                  <span>Meta: R$ 800,00</span>
+
+                  <span class="status status-warning">
+                    ↑ R$ 29,90 acima da meta
+                  </span>
+                </div>
+
+                <p class="last-update">
+                  Última atualização<br />
+                  29/09/2026 às 13:00
+                </p>
+              </div>
+            </article>
+            <!-- Produto 2 -->
+
+            <article class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/Cadeira ergonomica.webp"
+                  alt="Cadeira Ergonomica"
+                />
+              </div>
+
+              <div class="product-info">
+                <div class="product-top">
+                  <h2>Cadeira de Escritório</h2>
+
+                  <button
+                    class="menu-button"
+                    aria-label="Opções da Cadeira de Escritório"
+                  >
+                    ⋮
+                  </button>
+                </div>
+
+                <p class="product-store">Mercado Livre</p>
+                <p class="product-price">R$ 494,80</p>
+
+                <div class="product-details">
+                  <span>Meta: R$ 364,90</span>
+
+                  <span class="status status-error">
+                    ↑ R$ 129,90 acima da meta
+                  </span>
+                </div>
+
+                <p class="last-update">
+                  Última atualização<br />
+                  29/09/2026 às 13:00
+                </p>
+              </div>
+            </article>
+
+            <!-- Produto 3 -->
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="assets/images/airpods4.webp" alt="Airpods" />
+              </div>
+
+              <div class="product-info">
+                <div class="product-top">
+                  <h2>Apple AirPods 4</h2>
+
+                  <button
+                    class="menu-button"
+                    aria-label="Opções do Apple AirPods 4"
+                  >
+                    ⋮
+                  </button>
+                </div>
+
+                <p class="product-store">Mercado Livre</p>
+                <p class="product-price">R$ 1.199,90</p>
+
+                <div class="product-details">
+                  <span>Meta: R$ 1.250,00</span>
+
+                  <span class="status status-success">
+                    ↓ R$ 50,10 abaixo da meta
+                  </span>
+                </div>
+
+                <p class="last-update">
+                  Última atualização<br />
+                  29/09/2026 às 13:00
+                </p>
+              </div>
+            </article>
+            <!-- Produto 4 -->
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="assets/images/ps5.webp" alt="Ps5" />
+              </div>
+
+              <div class="product-info">
+                <div class="product-top">
+                  <h2>PlayStation 5 Slim</h2>
+
+                  <button
+                    class="menu-button"
+                    aria-label="Opções do PlayStation 5 Slim"
+                  >
+                    ⋮
+                  </button>
+                </div>
+
+                <p class="product-store">Mercado Livre</p>
+
+                <p class="product-price">R$ 3.299,00</p>
+
+                <div class="product-details">
+                  <span>Meta: Não definida</span>
+
+                  <span class="status status-neutral">
+                    — Sem meta definida
+                  </span>
+                </div>
+
+                <p class="last-update">
+                  Última atualização<br />
+                  29/09/2026 às 13:00
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- ==================== Modal Adicionar Produto ==================== -->
+
+    <div class="modal-overlay" id="add-product-modal">
+      <div class="modal">
+        <div class="modal-header">
+          <div>
+            <h2>Adicionar Produto</h2>
+            <p>Cadastre um produto para acompanhar seu preço.</p>
+          </div>
+
+          <button
+            class="modal-close"
+            id="close-modal"
+            type="button"
+            aria-label="Fechar"
+          >
+            ×
+          </button>
+        </div>
+
+        <form class="product-form">
+          <div class="form-group">
+            <label for="product-name">Nome</label>
+
+            <input
+              type="text"
+              id="product-name"
+              placeholder="Ex: Monitor Samsung Odyssey G5"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="product-url">URL do produto</label>
+
+            <input
+              type="url"
+              id="product-url"
+              placeholder="https://mercadolivre.com.br/..."
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="target-price">
+              Preço máximo
+              <span class="optional">(opcional)</span>
+            </label>
+
+            <input
+              type="number"
+              id="target-price"
+              placeholder="0,00"
+              min="0"
+              step="0.01"
+            />
+
+            <small class="form-help">
+              Sem uma meta, o produto continuará sendo monitorado, mas não
+              gerará alertas de preço.
+            </small>
+          </div>
+
+          <div class="form-actions">
+            <button
+              class="button button-secondary"
+              id="cancel-modal"
+              type="button"
+            >
+              Cancelar
+            </button>
+
+            <button class="button button-primary" type="submit">
+              + Adicionar produto
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,712 @@
+/* ==========================================================
+   Shelf Hub — styles.css
+   Semana 02 · Base do projeto (tokens, reset e componentes)
+   Fonte dos valores: docs/design-system.md
+   ========================================================== */
+
+/* ---------- 1. Design tokens ---------- */
+:root {
+  /* Cores principais */
+  --color-primary: #4f46e5;
+  --color-primary-dark: #3730a3;
+  --color-accent: #f59e0b;
+
+  /* Neutras */
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+
+  /* Status */
+  --color-status-planned: #2563eb;
+  --color-status-progress: #f59e0b;
+  --color-status-done: #16a34a;
+  --color-status-dropped: #dc2626;
+
+  /* Destrutivo */
+  --color-danger: #dc2626;
+
+  /* Tipografia */
+  --font-family-base: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Espaçamento (escala de 4px) */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+
+  /* Bordas e sombras */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --shadow-card: 0 1px 3px rgb(15 23 42 / 0.08), 0 8px 24px rgb(15 23 42 / 0.06);
+}
+
+/* ---------- 2. Reset e base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+a {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* Foco visível em tudo que é interativo (nunca outline: none sem substituto) */
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ---------- 3. Componentes reutilizáveis ---------- */
+
+/* Marca (logo + nome) */
+.marca {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.marca__icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.marca__nome {
+  display: block;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+}
+
+.marca__slogan {
+  display: block;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* Card */
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: var(--spacing-lg);
+}
+
+/* Campo de formulário (label + input) */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.campo__label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.campo__input {
+  width: 100%;
+  padding: 0.75rem var(--spacing-md);
+  font: inherit;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.campo__input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.campo__input:hover {
+  border-color: var(--color-text-muted);
+}
+
+.campo__input:focus-visible {
+  border-color: var(--color-primary);
+  outline: 3px solid rgb(79 70 229 / 0.35);
+  outline-offset: 0;
+}
+
+.campo__input:disabled {
+  background-color: var(--color-background);
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+}
+
+/* Botões */
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: 0.75rem var(--spacing-lg);
+  font: inherit;
+  font-weight: var(--font-weight-medium);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.botao:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.botao--primario {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.botao--primario:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.botao--primario:active {
+  background-color: var(--color-primary-dark);
+  transform: translateY(1px);
+}
+
+.botao--secundario {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.botao--secundario:hover {
+  background-color: rgb(79 70 229 / 0.08);
+}
+
+.botao--destrutivo {
+  background-color: var(--color-danger);
+  color: #ffffff;
+}
+
+.botao--destrutivo:hover {
+  background-color: #b91c1c;
+}
+
+.botao--bloco {
+  width: 100%;
+}
+
+/* ---------- 4. Página de login ---------- */
+.pagina-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--spacing-md);
+}
+
+.login {
+  width: 100%;
+  max-width: 26rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.login__cabecalho {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.login__titulo {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.login__texto {
+  color: var(--color-text-muted);
+}
+
+.login__formulario {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.login__rodape {
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* ---------- 5. Responsividade (mobile-first) ---------- */
+@media (min-width: 768px) {
+  .card {
+    padding: var(--spacing-xl);
+  }
+
+  .login__titulo {
+    font-size: 1.75rem;
+  }
+}
+
+/* ---------- 6. Botão como link ---------- */
+.botao {
+  text-decoration: none;
+}
+
+.botao--primario,
+.botao--primario:hover {
+  color: #ffffff;
+}
+
+/* ---------- 7. Badge de status (sempre com o nome do status) ---------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-medium);
+  border-radius: 999px;
+}
+
+.badge::before {
+  content: "";
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.badge--planejado { background-color: #dbeafe; color: #1e40af; }
+.badge--em-andamento { background-color: #fef3c7; color: #92400e; }
+.badge--consumido { background-color: #dcfce7; color: #166534; }
+.badge--abandonado { background-color: #fee2e2; color: #991b1b; }
+
+/* ---------- 8. Layout do app (sidebar + conteúdo) ---------- */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__link {
+  display: block;
+  padding: 0.625rem var(--spacing-md);
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+}
+
+.menu__link:hover {
+  background-color: rgb(79 70 229 / 0.08);
+  color: var(--color-primary-dark);
+}
+
+.menu__link[aria-current="page"] {
+  background-color: rgb(79 70 229 / 0.12);
+  color: var(--color-primary-dark);
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.usuario__avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--color-border);
+}
+
+.usuario__nome {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.usuario__conta {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  width: 100%;
+  max-width: 70rem;
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.conteudo__cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+}
+
+.titulo-pagina {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+/* ---------- 9. Tela de Início ---------- */
+.resumo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resumo__item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.resumo__rotulo {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.resumo__valor {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+}
+
+.secao {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.secao__titulo {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.lista-obras {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.obra-linha {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm) var(--spacing-md);
+}
+
+.obra-linha__nome {
+  display: block;
+  font-weight: var(--font-weight-medium);
+}
+
+.obra-linha__meta {
+  display: block;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* ---------- 10. Responsividade do app ---------- */
+@media (min-width: 768px) {
+  .resumo {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .app {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+    flex: 0 0 16.25rem;
+    height: 100vh;
+    justify-content: space-between;
+    padding: var(--spacing-xl) var(--spacing-md);
+    border-bottom: 0;
+    border-right: 1px solid var(--color-border);
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .conteudo {
+    padding: var(--spacing-2xl) 2.5rem;
+  }
+}
+
+/* ---------- 11. Utilitários ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- 12. Tela de Biblioteca ---------- */
+.titulo-grupo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.contador {
+  padding: 0.125rem 0.625rem;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary-dark);
+  background-color: rgb(79 70 229 / 0.1);
+  border-radius: 999px;
+}
+
+.busca {
+  flex: 1 1 18rem;
+  max-width: 22.5rem;
+}
+
+/* Filtros e ordenação: colunas automáticas, sem media query */
+.filtros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: var(--spacing-md);
+  align-items: end;
+}
+
+.filtros__favoritos {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  min-height: 2.75rem;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.filtros__favoritos input {
+  width: 1.125rem;
+  height: 1.125rem;
+  accent-color: var(--color-primary);
+}
+
+/* Grid de cards: quantas colunas couberem (mín. 16rem cada) */
+.grade-obras {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: var(--spacing-lg);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.obra {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  height: 100%;
+  padding: var(--spacing-md);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.obra:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgb(15 23 42 / 0.12);
+}
+
+.obra__capa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 9;
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  background: linear-gradient(135deg, rgb(79 70 229 / 0.12), rgb(79 70 229 / 0.04));
+  border-radius: var(--radius-md);
+}
+
+.obra__topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+.obra__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.tag {
+  padding: 0.0625rem 0.5rem;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.obra__titulo {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.3;
+}
+
+/* O link do título cobre o card inteiro */
+.obra__link {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.obra__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+}
+
+.obra__link:focus-visible {
+  outline: none;
+}
+
+.obra__link:focus-visible::after {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.obra__rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+  min-height: 1.5rem;
+  margin-top: auto;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.estrelas {
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+}
+
+.favorito {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  padding: var(--spacing-xs);
+  color: var(--color-text-muted);
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.favorito:hover {
+  color: var(--color-accent);
+}
+
+.favorito[aria-pressed="true"] {
+  color: var(--color-accent);
+}
+
+.favorito[aria-pressed="true"] svg {
+  fill: currentColor;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .obra {
+    transition: none;
+  }
+
+  .obra:hover {
+    transform: none;
+  }
+}

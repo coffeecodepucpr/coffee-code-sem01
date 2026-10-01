@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar — Shelf Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="pagina-login">
+  <main class="login card">
+    <header class="login__cabecalho">
+      <div class="marca">
+        <span class="marca__icone" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/>
+          </svg>
+        </span>
+        <div>
+          <span class="marca__nome">Shelf Hub</span>
+          <span class="marca__slogan">Tracker Cultural</span>
+        </div>
+      </div>
+      <h1 class="login__titulo">Entrar na sua biblioteca</h1>
+      <p class="login__texto">Acesse sua conta para ver o que você já consumiu e o que quer consumir.</p>
+    </header>
+
+    <!--  sem backend  -->
+    <form class="login__formulario" action="inicio.html">
+      <div class="campo">
+        <label class="campo__label" for="email">E-mail</label>
+        <input class="campo__input" type="email" id="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+      </div>
+
+      <div class="campo">
+        <label class="campo__label" for="senha">Senha</label>
+        <input class="campo__input" type="password" id="senha" autocomplete="current-password" minlength="8" placeholder="Mínimo de 8 caracteres" required>
+      </div>
+
+      <button class="botao botao--primario botao--bloco" type="submit">Entrar</button>
+    </form>
+
+    <p class="login__rodape">Ainda não tem conta? <a href="#">Criar conta</a></p>
+  </main>
+</body>
+</html>
