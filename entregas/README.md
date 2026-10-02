@@ -12,6 +12,8 @@ Aqui ficam as entregas de quem fez a Semana 01. A lista com o projeto de cada pe
 
 Depois do merge, a sua entrega entra na tabela do README principal.
 
+> **Prefere manter o projeto no seu próprio repositório?** Também vale. Mande o link no Discord ou [abra uma issue](../../../issues/new) aqui com o link da pasta da semana, e ele entra na tabela do mesmo jeito. Só capriche no `README.md`, como explicado abaixo, porque é ele que vai aparecer primeiro.
+
 ## Estrutura esperada
 
 ```text
