@@ -54,6 +54,18 @@ Ao final da Semana 01, o repositório do **seu projeto** (não este aqui) deve t
 
 Não precisa estar perfeito. Precisa existir e fazer sentido com o que você definiu ao longo da semana. Os detalhes estão em [docs/entregavel.md](docs/entregavel.md).
 
+## Entregas da turma
+
+Projetos de quem entregou a Semana 01. Quer entregar o seu? Veja [como entregar](entregas/README.md).
+
+| Pessoa | Projeto | Sobre | Links |
+|---|---|---|---|
+| Gabriel Vinhosa | Biblioteca entre Colegas | Empréstimo de livros didáticos entre estudantes | [pasta](entregas/Gabriel%20Vinhosa/) · [Figma](https://www.figma.com/design/KKPdfHIJMBTW8AOSw1fgJr) |
+| Guilherme Barbosa | Shelf Hub | Biblioteca pessoal de filmes, séries, livros, jogos e outros conteúdos | [pasta](entregas/Guilherme%20Barbosa/) · [Figma](https://www.figma.com/proto/qzzGhfapnxVoYsicLXboxt/Shelf-Hub?node-id=5-788&p=f&t=A6Dyj4L6kNFV6My3-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A7) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem01/entregas/Guilherme%20Barbosa/login.html) |
+| Luis Medina | Estom | Monitoramento de preços de produtos online | [pasta](entregas/Luis%20Medina/) · [Figma](https://www.figma.com/proto/oL9MehNA1Gea3Zhzh8I69z/Sem-t%C3%ADtulo?node-id=0-1&t=SoRcZQfwCZWOKUVi-1) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem01/entregas/Luis%20Medina/index.html) |
+| Rodrigo Fagnani | FixAqui | Conecta clientes a profissionais de pequenos serviços | [pasta](entregas/Rodrigo%20Fagnani/) · [Figma](https://www.figma.com/proto/8NBkV8NkIjlPJSXg4am1bf/Untitled?node-id=0-1&t=aBlZ6abbcyV5SmwH-1) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem01/entregas/Rodrigo%20Fagnani/login.html) |
+| Vitor Schotten | Organizador de estudos | Matérias, tarefas e prazos em um só lugar | [pasta](entregas/Vitor%20Schotten/) · [Figma](https://www.figma.com/design/4YoKNGbmhi1ARt1dSBwE8l/Untitled?node-id=1-3914&t=e2pK7p2WmJvj7EEJ-1) |
+
 ## Duas trilhas, um projeto só
 
 Ao longo dos módulos você vai encontrar dois símbolos:
