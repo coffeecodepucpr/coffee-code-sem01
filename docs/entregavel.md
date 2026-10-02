@@ -25,7 +25,7 @@ Use este arquivo como checklist final antes de considerar a Semana 01 concluída
 
 ## Como revisar antes de entregar
 
-Antes de considerar a semana concluída, faça este teste rápido: peça para outra pessoa (um colega de equipe, alguém de outro grupo, ou até você mesmo revisando depois de um tempo) ler apenas a sua pasta `/docs` e navegar pelo protótipo do Figma, sem nenhuma explicação a mais. Essa pessoa consegue entender:
+Antes de considerar a semana concluída, faça este teste rápido: peça para outra pessoa (um colega do Coffee & Code, um amigo, ou até você mesmo revisando depois de um tempo) ler apenas a sua pasta `/docs` e navegar pelo protótipo do Figma, sem nenhuma explicação a mais. Essa pessoa consegue entender:
 
 - [ ] Qual problema o projeto resolve?
 - [ ] Quem é o usuário?

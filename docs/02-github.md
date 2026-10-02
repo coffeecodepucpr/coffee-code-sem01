@@ -153,7 +153,7 @@ projeto/
 
 **Pull Requests (PR).** Em vez de dar `push` direto na branch principal, o fluxo profissional é: criar uma branch, fazer as mudanças, e abrir um **Pull Request** pedindo para essas mudanças serem revisadas e incorporadas à `main`. Isso permite revisão de código antes de qualquer coisa entrar no projeto principal. Vamos praticar isso ativamente a partir da Semana 02, mas já vale criar o hábito de pensar em branches + PR em vez de commit direto na `main`.
 
-**Organização da equipe.** Defina desde já: quem é responsável por revisar PRs, como issues são distribuídas entre os membros, e onde ficam registradas decisões técnicas (uma boa resposta: dentro do próprio `/docs`, em um arquivo de decisões).
+**Organização do projeto.** Defina desde já: como você vai usar issues para acompanhar o que falta fazer, e onde ficam registradas decisões técnicas (uma boa resposta: dentro do próprio `/docs`, em um arquivo de decisões).
 
 ## Pratique você mesmo
 

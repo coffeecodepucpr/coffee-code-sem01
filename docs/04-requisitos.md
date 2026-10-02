@@ -160,7 +160,7 @@ Alguns pontos para aprofundar:
 
 ## Atividade
 
-Escolha uma funcionalidade central do projeto do seu grupo (ou, se ainda não tem um projeto definido, escolha uma ideia simples — por exemplo, um sistema para organizar os próprios encontros do Coffee & Code) e:
+Escolha uma funcionalidade central do seu projeto (ou, se ainda não tem um projeto definido, escolha uma ideia simples — por exemplo, um sistema para organizar os próprios encontros do Coffee & Code) e:
 
 1. Escreva o problema que ela resolve, em uma frase.
 2. Escreva de 3 a 5 requisitos funcionais relacionados a essa funcionalidade.

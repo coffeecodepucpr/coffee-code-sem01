@@ -65,11 +65,11 @@ Não são dois cursos. Todo mundo trabalha no mesmo projeto — muda só a profu
 
 ## Como funciona
 
-O Coffee & Code é **majoritariamente assíncrono**. Cada módulo foi escrito para ser autossuficiente: você estuda sozinho, no seu ritmo, sem depender de estar em uma call. Dá para avançar mais rápido, voltar em semanas anteriores e consultar o material durante o projeto.
+O Coffee & Code é **100% online**. Cada módulo foi escrito para ser autossuficiente: você estuda no seu ritmo, pode avançar mais rápido, voltar em semanas anteriores e consultar o material durante o projeto.
 
-Os encontros semanais existem para tirar dúvidas, revisar conceitos, programar junto e mostrar o que você produziu — **não para dar aula**:
+Os encontros semanais, também online, existem para tirar dúvidas, revisar conceitos, programar junto e mostrar o que você produziu — **não para dar aula**:
 
-- 🗓️ **quarta-feira** — 19h30 às 21h00
+- 🗓️ **quarta-feira** — 20h00 às 21h30
 - 🗓️ **sábado** — 10h00 às 11h30
 
 Os dois trabalham o mesmo conteúdo. Escolha o que couber melhor na sua semana, e não precisa ficar o horário inteiro na call.

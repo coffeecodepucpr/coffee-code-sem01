@@ -14,7 +14,7 @@ Os desafios estão organizados pelos mesmos módulos da semana, e marcados por t
 
 ⚡
 - Crie uma branch, faça uma mudança nela, e pratique um `merge` de volta para a `main` — incluindo resolver um conflito de merge proposital (edite a mesma linha de um arquivo em duas branches diferentes e tente juntar as duas).
-- Configure um template de Issue no repositório (`.github/ISSUE_TEMPLATE`) para padronizar como bugs e funcionalidades são reportados pela equipe.
+- Configure um template de Issue no repositório (`.github/ISSUE_TEMPLATE`) para padronizar como bugs e funcionalidades são reportados.
 - Pesquise e escreva, no seu `README.md`, uma seção "Como contribuir" explicando o fluxo esperado de branch → commit → Pull Request para quem quiser colaborar com o projeto.
 
 ---
@@ -26,7 +26,7 @@ Os desafios estão organizados pelos mesmos módulos da semana, e marcados por t
 - Inclua uma imagem (pode ser um print do seu protótipo do Figma) em algum lugar da documentação, usando a sintaxe de imagem.
 
 ⚡
-- Crie um arquivo `docs/decisoes.md` (um "log de decisões técnicas") documentando pelo menos uma decisão que sua equipe tomou nesta semana e por quê — isso é uma prática comum em projetos reais, geralmente chamada de ADR (Architecture Decision Record).
+- Crie um arquivo `docs/decisoes.md` (um "log de decisões técnicas") documentando pelo menos uma decisão que você tomou nesta semana e por quê — isso é uma prática comum em projetos reais, geralmente chamada de ADR (Architecture Decision Record).
 
 ---
 
@@ -75,6 +75,6 @@ Os desafios estão organizados pelos mesmos módulos da semana, e marcados por t
 
 ## Desafio geral (todos)
 
-Apresente o projeto da sua equipe para outra equipe do Coffee & Code (ou peça para alguém de fora do seu grupo revisar) usando **apenas** a sua pasta `/docs` e o link do Figma — sem explicação verbal complementar. Se a pessoa conseguir entender o problema, os requisitos e navegar pelo protótipo sozinha, sua documentação está cumprindo o papel dela. Se não conseguir, veja o que faltou e ajuste.
+Apresente o seu projeto para outra pessoa do Coffee & Code usando **apenas** a sua pasta `/docs` e o link do Figma — sem explicação verbal complementar. Se a pessoa conseguir entender o problema, os requisitos e navegar pelo protótipo sozinha, sua documentação está cumprindo o papel dela. Se não conseguir, veja o que faltou e ajuste.
 
 Esse é, na prática, o teste real de "documentação autossuficiente" — o mesmo princípio por trás de como o Coffee & Code funciona.

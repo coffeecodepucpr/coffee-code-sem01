@@ -28,7 +28,7 @@ Sem controle de versão, a resposta costuma ser "não" ou "só na base do estres
 - Git ajuda a **combinar** mudanças de pessoas diferentes (merge).
 - Todo o histórico fica salvo — nada se perde de fato.
 
-🌱 **Se você está começando:** não se preocupe em entender tudo de uma vez. Neste módulo você só vai usar Git localmente, sozinho, no seu computador. A parte de trabalhar em equipe vem com calma no módulo de GitHub.
+🌱 **Se você está começando:** não se preocupe em entender tudo de uma vez. Neste módulo você só vai usar Git localmente, sozinho, no seu computador. A parte de publicar o projeto online vem com calma no módulo de GitHub.
 
 ## Exemplo real
 

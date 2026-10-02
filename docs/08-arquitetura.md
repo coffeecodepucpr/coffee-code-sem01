@@ -141,7 +141,7 @@ Aprofunde em:
 - **Justifique escolhas tecnológicas iniciais**, se já tiver alguma ideia (por exemplo: "vamos usar React no frontend porque X", "banco relacional porque os dados têm relações claras entre usuários e grupos"). Não precisa ser definitivo, mas vale documentar o raciocínio.
 - **Pense em pontos de extensão.** Se o projeto crescer (por exemplo, adicionar um app mobile além do site), a arquitetura atual aguentaria, ou exigiria retrabalho grande? Não precisa resolver isso agora, só ter consciência.
 - **Considere a comunicação entre frontend e backend com mais detalhe** — mesmo em alto nível: será uma API REST? Vai haver autenticação? Isso não precisa estar implementado, só esboçado.
-- **Divida responsabilidades dentro da equipe** de acordo com essa arquitetura — quem vai ficar mais próximo do frontend, quem do backend, sabendo que nas próximas semanas isso vira trabalho de verdade.
+- **Planeje a ordem de construção** de acordo com essa arquitetura — o que vem primeiro, frontend ou backend, sabendo que nas próximas semanas isso vira trabalho de verdade.
 
 ## Atividade
 

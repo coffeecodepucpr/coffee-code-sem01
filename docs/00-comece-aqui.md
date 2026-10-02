@@ -8,7 +8,7 @@ Este documento é o seu ponto de partida. Leia ele inteiro antes de abrir qualqu
 
 ## O que você vai construir
 
-Ao longo desta semana, você (sozinho ou em equipe) vai dar os primeiros passos de um projeto de software **antes de escrever qualquer código**. Isso inclui:
+Ao longo desta semana, você vai dar os primeiros passos de um projeto de software **antes de escrever qualquer código**. Isso inclui:
 
 - Definir **o problema** que o projeto resolve e **quem** vai usá-lo.
 - Escrever isso em forma de **requisitos** e **histórias de usuário**.
@@ -44,7 +44,7 @@ Você vai notar que a ordem dos arquivos não é exatamente igual à ordem do ma
 | Ordem | Módulo | Por quê nessa posição |
 |---|---|---|
 | 01 | Git | Antes de produzir qualquer conteúdo, você precisa saber guardar o histórico dele |
-| 02 | GitHub | Onde esse histórico vai morar e ser compartilhado com a equipe |
+| 02 | GitHub | Onde esse histórico vai morar e ser compartilhado |
 | 03 | Markdown | A "linguagem" que você vai usar para documentar tudo dentro do GitHub |
 | 04 | Requisitos | O ponto de partida real do projeto: o problema e o que precisa ser resolvido |
 | 05 | UX/UI | Como pensar no uso do sistema antes de desenhar qualquer tela |
@@ -85,7 +85,7 @@ Não precisa estar perfeito. Precisa existir e fazer sentido com o que você def
 
 ## Como estudar
 
-Como o Coffee & Code é majoritariamente assíncrono, cada módulo foi escrito para ser autossuficiente: você pode estudar sozinho, no seu ritmo, sem depender de estar em uma call. Os encontros semanais existem para tirar dúvidas e mostrar o que você produziu — não para "dar a aula".
+O Coffee & Code é 100% online, e cada módulo foi escrito para ser autossuficiente: você pode estudar no seu ritmo, sem depender de estar em uma call. Os encontros semanais, também online, existem para tirar dúvidas e mostrar o que você produziu — não para "dar a aula".
 
 Sugestão de ritmo (ajuste ao seu tempo disponível):
 
