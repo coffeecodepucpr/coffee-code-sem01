@@ -7,7 +7,7 @@
 > coffee loaded ✓
 ```
 
-Material da **Semana 01** da trilha do Coffee & Code, o clube de tecnologia da PUCPR.
+Material da **Semana 01** da trilha do Coffee & Code, clube de tecnologia fundado por estudantes de Engenharia de Software da PUCPR e aberto a todos que querem aprender construindo.
 
 Esta semana existe para mostrar uma coisa que quase ninguém conta no começo: **um projeto de software não começa escrevendo código**. Antes da primeira linha, existe um problema para entender, um usuário para conhecer, requisitos para escrever e telas para desenhar. É isso que você vai fazer aqui.
 
@@ -85,6 +85,10 @@ Os encontros semanais, também online, existem para tirar dúvidas, revisar conc
 - 🗓️ **sábado** — 10h00 às 11h30
 
 Os dois trabalham o mesmo conteúdo. Escolha o que couber melhor na sua semana, e não precisa ficar o horário inteiro na call.
+
+## Trilha completa
+
+Todas as semanas da trilha estão no [perfil do Coffee & Code](https://github.com/coffeecodepucpr).
 
 ## Travou?
 
