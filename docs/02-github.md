@@ -1,10 +1,12 @@
-# 02 — GitHub
+# 02 | GitHub
+
+Português · [English](../docs-eng/02-github.md)
 
 > Módulo anterior: `01-git.md` · Próximo módulo: `03-markdown.md`
 
 ## O que é
 
-No módulo anterior, você criou um repositório Git **local** — ele existe só no seu computador. Se seu HD falhar amanhã, esse histórico some junto.
+No módulo anterior, você criou um repositório Git **local**; ele existe só no seu computador. Se seu HD falhar amanhã, esse histórico some junto.
 
 **GitHub é um site que hospeda repositórios Git na nuvem.** Ele permite que você:
 
@@ -31,13 +33,13 @@ Você e mais duas pessoas estão criando o app do Coffee & Code. Cada um trabalh
 
 ### Repositório remoto
 
-É a versão do seu repositório que fica hospedada no GitHub, em vez de só no seu computador. Você pode ter um repositório local e um remoto conectados — mudanças em um podem ser enviadas ou trazidas para o outro.
+É a versão do seu repositório que fica hospedada no GitHub, em vez de só no seu computador. Você pode ter um repositório local e um remoto conectados: mudanças em um podem ser enviadas ou trazidas para o outro.
 
 ![Repositório local no seu computador conectado ao repositório remoto no GitHub, com push enviando mudanças e pull trazendo mudanças](./assets/fluxo-github.svg)
 
 ### Clone
 
-**Clonar** é baixar uma cópia completa de um repositório que já existe no GitHub para o seu computador — incluindo todo o histórico de commits.
+**Clonar** é baixar uma cópia completa de um repositório que já existe no GitHub para o seu computador, incluindo todo o histórico de commits.
 
 ```bash
 git clone https://github.com/usuario/nome-do-repositorio.git
@@ -76,7 +78,7 @@ git checkout nome-da-branch   # muda para essa branch
 git checkout -b nome-da-branch
 ```
 
-🌱 Nesta semana você não precisa dominar branches — só entender que elas existem e para que servem. Vamos aprofundar em semanas futuras.
+**Se você está começando:** nesta semana você não precisa dominar branches, só entender que elas existem e para que servem. Vamos aprofundar em semanas futuras.
 
 ### README
 
@@ -84,7 +86,7 @@ O `README.md` é o primeiro arquivo que qualquer pessoa vê ao abrir seu reposit
 
 ### Issues
 
-**Issues** são como uma lista de tarefas/problemas do projeto, dentro do próprio GitHub. Cada issue é um item específico — um bug para corrigir, uma funcionalidade para implementar, uma dúvida para resolver. Issues podem ser atribuídas a pessoas, ter etiquetas (labels) e serem fechadas quando resolvidas.
+**Issues** são como uma lista de tarefas/problemas do projeto, dentro do próprio GitHub. Cada issue é um item específico: um bug para corrigir, uma funcionalidade para implementar, uma dúvida para resolver. Issues podem ser atribuídas a pessoas, ter etiquetas (labels) e serem fechadas quando resolvidas.
 
 Exemplo de issue:
 
@@ -113,7 +115,7 @@ git remote add origin https://github.com/seu-usuario/nome-do-repo.git
 git push -u origin main
 ```
 
-`origin` é só um apelido para o endereço do repositório remoto — é o nome padrão usado pela comunidade.
+`origin` é só um apelido para o endereço do repositório remoto; é o nome padrão usado pela comunidade.
 
 ### 4. Organização básica de um projeto
 
@@ -130,17 +132,17 @@ nome-do-projeto/
 └── (o restante do código virá nas próximas semanas)
 ```
 
-## 🌱 Se você está começando
+## Se você está começando
 
-Se a ideia de linha de comando ainda intimida, saiba que o GitHub também tem uma interface visual (GitHub Desktop) que faz `add`, `commit`, `push` e `pull` com botões, sem digitar comandos. É válido usar no começo — mas vale a pena entender o que cada botão faz por trás, porque os comandos aparecem em praticamente todo lugar que fala sobre desenvolvimento.
+Se a ideia de linha de comando ainda intimida, saiba que o GitHub também tem uma interface visual (GitHub Desktop) que faz `add`, `commit`, `push` e `pull` com botões, sem digitar comandos. É válido usar no começo, mas vale a pena entender o que cada botão faz por trás, porque os comandos aparecem em praticamente todo lugar que fala sobre desenvolvimento.
 
-## ⚡ Se você já tem experiência
+## Se você já tem experiência
 
 Para os veteranos, vale aprofundar em quatro pontos que fazem diferença em projetos reais:
 
 **Convenções de nomenclatura.** Nomes de branches consistentes (`feature/login`, `fix/bug-cadastro`), mensagens de commit em um padrão (por exemplo, [Conventional Commits](https://www.conventionalcommits.org/): `feat: adiciona tela de login`, `fix: corrige validação de email`).
 
-**Estrutura de pastas pensada desde o início**, mesmo que ainda não haja código — isso facilita a vida de quem entrar no projeto depois:
+**Estrutura de pastas pensada desde o início**, mesmo que ainda não haja código; isso facilita a vida de quem entrar no projeto depois:
 
 ```
 projeto/
@@ -165,9 +167,9 @@ projeto/
 6. Confira no site do GitHub se a pasta `docs/` aparece lá.
 7. Crie uma Issue no seu repositório descrevendo a primeira tarefa da semana, por exemplo: "Definir requisitos do projeto".
 
-⚡ Se você é veterano, adicione também: crie uma branch chamada `docs/estrutura-inicial`, faça as mudanças acima dentro dela, e depois abra um Pull Request da sua branch para a `main` (não precisa fazer merge ainda, só praticar a criação do PR).
+Se você é veterano, adicione também: crie uma branch chamada `docs/estrutura-inicial`, faça as mudanças acima dentro dela, e depois abra um Pull Request da sua branch para a `main` (não precisa fazer merge ainda, só praticar a criação do PR).
 
-> 💡 Veja também `cheatsheet-git-github.md` para uma referência rápida de todos os comandos de Git e GitHub desta semana, lado a lado.
+> Veja também `cheatsheet-git-github.md` para uma referência rápida de todos os comandos de Git e GitHub desta semana, lado a lado.
 
 **Checklist do módulo:**
 
@@ -175,8 +177,8 @@ projeto/
 - [ ] Repositório `coffee-code-sem01` criado e clonado localmente
 - [ ] Pasta `docs/` criada, commitada e enviada (`push`) para o GitHub
 - [ ] Pelo menos uma Issue criada
-- [ ] ⚡ Veteranos: branch e Pull Request criados
+- [ ] Veteranos: branch e Pull Request criados
 
 ---
 
-**Próximo módulo:** `03-markdown.md` — vamos aprender a escrever essa documentação de verdade.
+**Próximo módulo:** `03-markdown.md`, vamos aprender a escrever essa documentação de verdade.

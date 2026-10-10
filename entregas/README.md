@@ -1,11 +1,13 @@
-# Entregas — Semana 01
+# Entregas | Semana 01
+
+Português · [English](README.en.md)
 
 Aqui ficam as entregas de quem fez a Semana 01. A lista com o projeto de cada pessoa está no [README principal](../README.md#entregas-da-turma).
 
 ## Como entregar
 
 1. Faça um **fork** deste repositório (botão *Fork*, no canto superior direito).
-2. No seu fork, crie a pasta `entregas/Nome Sobrenome/` — com o seu nome e sobrenome.
+2. No seu fork, crie a pasta `entregas/Nome Sobrenome/`, com o seu nome e sobrenome.
 3. Coloque seus arquivos dentro dela, seguindo a estrutura abaixo.
 4. Faça commit e push no seu fork.
 5. Abra um **Pull Request** para este repositório e preencha o modelo que aparece.

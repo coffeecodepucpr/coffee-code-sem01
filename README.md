@@ -1,21 +1,25 @@
-# ☕ Coffee & Code — SEM 01 | Kickoff & Design System
+# Coffee & Code | SEM 01 | Kickoff & Design System
+
+Português · [English](README.en.md)
 
 ```text
 > module: sem-01
 > tema: kickoff & design system
 > status: online
-> coffee loaded ✓
+> coffee loaded
 ```
 
 Material da **Semana 01** da trilha do Coffee & Code, clube de tecnologia fundado por estudantes de Engenharia de Software da PUCPR e aberto a todos que querem aprender construindo.
 
 Esta semana existe para mostrar uma coisa que quase ninguém conta no começo: **um projeto de software não começa escrevendo código**. Antes da primeira linha, existe um problema para entender, um usuário para conhecer, requisitos para escrever e telas para desenhar. É isso que você vai fazer aqui.
 
-No fim da semana você não vai ter código rodando — e está tudo certo. Você vai ter algo que costuma faltar: clareza sobre o que construir e por quê.
+No fim da semana você não vai ter código rodando, e está tudo certo. Você vai ter algo que costuma faltar: clareza sobre o que construir e por quê.
+
+> **Sobre o idioma:** o material em inglês fica em [`docs-eng/`](docs-eng/), com a mesma estrutura de [`docs/`](docs/); os READMEs têm versão em inglês com o sufixo `.en.md`.
 
 ## Por onde começar
 
-👉 **[docs/00-comece-aqui.md](docs/00-comece-aqui.md)** — leia este primeiro. Ele explica o caminho da semana e como estudar.
+**[docs/00-comece-aqui.md](docs/00-comece-aqui.md)**: leia este primeiro. Ele explica o caminho da semana e como estudar.
 
 Depois, siga os módulos na ordem:
 
@@ -32,9 +36,9 @@ Depois, siga os módulos na ordem:
 
 E, para consultar quando precisar:
 
-- 📋 [Cheat sheet — Git & GitHub](docs/cheatsheet-git-github.md) — os comandos essenciais, sem precisar decorar
-- 🎯 [Desafios](docs/desafios.md) — opcionais, para ir além do pedido
-- ✅ [Entregável](docs/entregavel.md) — checklist final antes de fechar a semana
+- [Cheat sheet, Git & GitHub](docs/cheatsheet-git-github.md): os comandos essenciais, sem precisar decorar
+- [Desafios](docs/desafios.md): opcionais, para ir além do pedido
+- [Entregável](docs/entregavel.md): checklist final antes de fechar a semana
 
 ## O entregável
 
@@ -47,7 +51,7 @@ Ao final da Semana 01, o repositório do **seu projeto** (não este aqui) deve t
 ├── requisitos.md
 ├── historias-de-usuario.md
 ├── design-system.md
-└── arquitetura.md    ← versão inicial; aprofundada pelos veteranos ⚡
+└── arquitetura.md    ← versão inicial; aprofundada pelos veteranos
 ```
 
 **2. Um protótipo navegável no Figma**, com as telas do fluxo principal conectadas.
@@ -68,21 +72,21 @@ Projetos de quem entregou a Semana 01. Quer entregar o seu? Veja [como entregar]
 
 ## Duas trilhas, um projeto só
 
-Ao longo dos módulos você vai encontrar dois símbolos:
+Ao longo dos módulos você vai encontrar dois tipos de seção:
 
-- 🌱 **Se você está começando** — explicações com calma, sem assumir que você já viu aquilo antes.
-- ⚡ **Se você já tem experiência** — aprofundamentos, boas práticas e desafios extras.
+- **Se você está começando**: explicações com calma, sem assumir que você já viu aquilo antes.
+- **Se você já tem experiência**: aprofundamentos, boas práticas e desafios extras.
 
-Não são dois cursos. Todo mundo trabalha no mesmo projeto — muda só a profundidade. Se você já programa, ainda vale ler as partes 🌱: dá para descobrir buracos de fundamento que a gente costuma pular.
+Não são dois cursos. Todo mundo trabalha no mesmo projeto, muda só a profundidade. Se você já programa, ainda vale ler as partes para iniciantes: dá para descobrir buracos de fundamento que a gente costuma pular.
 
 ## Como funciona
 
 O Coffee & Code é **100% online**. Cada módulo foi escrito para ser autossuficiente: você estuda no seu ritmo, pode avançar mais rápido, voltar em semanas anteriores e consultar o material durante o projeto.
 
-Os encontros semanais, também online, existem para tirar dúvidas, revisar conceitos, programar junto e mostrar o que você produziu — **não para dar aula**:
+Os encontros semanais, também online, existem para tirar dúvidas, revisar conceitos, programar junto e mostrar o que você produziu, **não para dar aula**:
 
-- 🗓️ **quarta-feira** — 20h00 às 21h30
-- 🗓️ **sábado** — 10h00 às 11h30
+- **quarta-feira**: 20h00 às 21h30
+- **sábado**: 10h00 às 11h30
 
 Os dois trabalham o mesmo conteúdo. Escolha o que couber melhor na sua semana, e não precisa ficar o horário inteiro na call.
 
@@ -99,6 +103,6 @@ E lembra: não saber alguma coisa não é problema. Saber pesquisar faz parte da
 ---
 
 ```text
-HTTP 418 — I'm a teapot
+HTTP 418: I'm a teapot
 > ready to code
 ```

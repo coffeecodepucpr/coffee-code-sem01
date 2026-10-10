@@ -1,14 +1,16 @@
-# 08 — Arquitetura inicial
+# 08 | Arquitetura inicial
+
+Português · [English](../docs-eng/08-architecture.md)
 
 > Módulo anterior: `07-design-system.md` · Próximo: `desafios.md` e `entregavel.md`
 
-Este módulo é voltado principalmente para os veteranos ⚡, mas todo mundo pode (e deveria) ler e começar a pensar nessas questões — mesmo sem programação ainda, algumas decisões começam a ficar mais claras agora que existem requisitos, telas e um design system.
+Este módulo é voltado principalmente para os veteranos, mas todo mundo pode (e deveria) ler e começar a pensar nessas questões: mesmo sem programação ainda, algumas decisões começam a ficar mais claras agora que existem requisitos, telas e um design system.
 
 ## O que é
 
 **Arquitetura de software** é a forma como as diferentes partes de um sistema são organizadas e se comunicam entre si. Antes de escrever uma linha de código, já é possível (e recomendável) ter uma primeira visão de como o sistema vai ser dividido.
 
-Não estamos falando ainda de arquitetura avançada (padrões complexos, microsserviços, etc.) — só da visão inicial: quais grandes partes o sistema vai ter, e como elas conversam entre si.
+Não estamos falando ainda de arquitetura avançada (padrões complexos, microsserviços, etc.). Só da visão inicial: quais grandes partes o sistema vai ter, e como elas conversam entre si.
 
 ## Por que pensamos nisso agora
 
@@ -23,7 +25,7 @@ O que falta é uma primeira ideia de **como isso vai ser construído por trás d
 
 ### Frontend
 
-É a parte do sistema que o usuário vê e interage diretamente — as telas que você desenhou no Figma. É onde acontece a interface, a navegação, a exibição da informação.
+É a parte do sistema que o usuário vê e interage diretamente: as telas que você desenhou no Figma. É onde acontece a interface, a navegação, a exibição da informação.
 
 ### Backend
 
@@ -31,11 +33,11 @@ O que falta é uma primeira ideia de **como isso vai ser construído por trás d
 
 ### Banco de dados
 
-É onde as informações do sistema ficam armazenadas de forma persistente — usuários, grupos, mensagens, o que for relevante para o seu projeto. Diferente de uma variável em memória, dados em um banco de dados continuam existindo mesmo depois que o sistema é reiniciado.
+É onde as informações do sistema ficam armazenadas de forma persistente: usuários, grupos, mensagens, o que for relevante para o seu projeto. Diferente de uma variável em memória, dados em um banco de dados continuam existindo mesmo depois que o sistema é reiniciado.
 
 ### Responsabilidades
 
-Cada parte do sistema deveria ter uma responsabilidade clara. O frontend não deveria, por exemplo, decidir sozinho se um grupo está cheio ou não — essa é uma regra de negócio, responsabilidade do backend. Deixar claro "quem cuida do quê" evita que a mesma lógica fique duplicada (e, com o tempo, inconsistente) em partes diferentes do sistema.
+Cada parte do sistema deveria ter uma responsabilidade clara. O frontend não deveria, por exemplo, decidir sozinho se um grupo está cheio ou não; essa é uma regra de negócio, responsabilidade do backend. Deixar claro "quem cuida do quê" evita que a mesma lógica fique duplicada (e, com o tempo, inconsistente) em partes diferentes do sistema.
 
 ### Organização de diretórios
 
@@ -50,11 +52,11 @@ projeto/
 └── .gitignore
 ```
 
-Isso pode (e provavelmente vai) mudar conforme o projeto avança e a tecnologia escolhida define convenções próprias — mas ter uma primeira ideia já ajuda a organizar o pensamento.
+Isso pode (e provavelmente vai) mudar conforme o projeto avança e a tecnologia escolhida define convenções próprias, mas ter uma primeira ideia já ajuda a organizar o pensamento.
 
 ### Comunicação entre as partes
 
-Frontend e backend geralmente conversam através de requisições (por exemplo, o frontend pede "me dá a lista de grupos" e o backend responde com esses dados). Você não precisa saber ainda os detalhes técnicos dessa comunicação — só entender que ela existe e que é uma decisão de arquitetura: como as partes do sistema vão trocar informação entre si.
+Frontend e backend geralmente conversam através de requisições (por exemplo, o frontend pede "me dá a lista de grupos" e o backend responde com esses dados). Você não precisa saber ainda os detalhes técnicos dessa comunicação, só entender que ela existe e que é uma decisão de arquitetura: como as partes do sistema vão trocar informação entre si.
 
 ## Exemplo real
 
@@ -85,7 +87,7 @@ Cada seta representa uma comunicação entre partes. Cada caixa tem uma responsa
 
 Você não precisa (nem deveria, nesta etapa) desenhar uma arquitetura completa e definitiva. O objetivo é uma primeira visão, sabendo que ela vai evoluir.
 
-1. **Liste as grandes partes do seu sistema** — provavelmente frontend, backend e banco de dados, mas isso pode variar dependendo do projeto.
+1. **Liste as grandes partes do seu sistema**: provavelmente frontend, backend e banco de dados, mas isso pode variar dependendo do projeto.
 2. **Para cada parte, escreva uma frase sobre sua responsabilidade principal.**
 3. **Desenhe (pode ser um diagrama simples em texto, como o exemplo acima) como essas partes se comunicam**, considerando pelo menos o fluxo principal que você já mapeou no módulo de UX/UI.
 4. **Pense em uma estrutura inicial de pastas** para o código, mesmo que ainda não exista nenhum código.
@@ -130,18 +132,18 @@ projeto/
 Esta é uma primeira visão da arquitetura e pode (e deve) mudar conforme o projeto avança.
 ```
 
-## 🌱 Se você está começando
+## Se você está começando
 
-Este módulo pode parecer abstrato se você nunca programou — e está tudo bem. Nesta semana, o mais importante é entender que um sistema tem partes diferentes com responsabilidades diferentes, e que pensar nisso antes de programar ajuda a organizar melhor o trabalho depois. Você não precisa escrever um `docs/arquitetura.md` completo — um parágrafo simples descrevendo as partes do seu sistema já é um bom começo.
+Este módulo pode parecer abstrato se você nunca programou, e tudo bem. Nesta semana, o mais importante é entender que um sistema tem partes diferentes com responsabilidades diferentes, e que pensar nisso antes de programar ajuda a organizar melhor o trabalho depois. Você não precisa escrever um `docs/arquitetura.md` completo: um parágrafo simples descrevendo as partes do seu sistema já é um bom começo.
 
-## ⚡ Se você já tem experiência
+## Se você já tem experiência
 
 Aprofunde em:
 
 - **Justifique escolhas tecnológicas iniciais**, se já tiver alguma ideia (por exemplo: "vamos usar React no frontend porque X", "banco relacional porque os dados têm relações claras entre usuários e grupos"). Não precisa ser definitivo, mas vale documentar o raciocínio.
 - **Pense em pontos de extensão.** Se o projeto crescer (por exemplo, adicionar um app mobile além do site), a arquitetura atual aguentaria, ou exigiria retrabalho grande? Não precisa resolver isso agora, só ter consciência.
-- **Considere a comunicação entre frontend e backend com mais detalhe** — mesmo em alto nível: será uma API REST? Vai haver autenticação? Isso não precisa estar implementado, só esboçado.
-- **Planeje a ordem de construção** de acordo com essa arquitetura — o que vem primeiro, frontend ou backend, sabendo que nas próximas semanas isso vira trabalho de verdade.
+- **Considere a comunicação entre frontend e backend com mais detalhe**, mesmo em alto nível: será uma API REST? Vai haver autenticação? Isso não precisa estar implementado, só esboçado.
+- **Planeje a ordem de construção** de acordo com essa arquitetura: o que vem primeiro, frontend ou backend, sabendo que nas próximas semanas isso vira trabalho de verdade.
 
 ## Atividade
 
@@ -157,7 +159,7 @@ Aprofunde em:
 - [ ] Fluxo de dados do caso de uso principal esboçado
 - [ ] Estrutura inicial de pastas proposta
 - [ ] `docs/arquitetura.md` preenchido, commitado e enviado
-- [ ] ⚡ Veteranos: escolhas tecnológicas iniciais justificadas
+- [ ] Veteranos: escolhas tecnológicas iniciais justificadas
 
 ---
 

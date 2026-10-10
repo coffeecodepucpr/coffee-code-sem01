@@ -1,4 +1,6 @@
-# 04 — Engenharia de Requisitos
+# 04 | Engenharia de Requisitos
+
+Português · [English](../docs-eng/04-requirements.md)
 
 > Módulo anterior: `03-markdown.md` · Próximo módulo: `05-ux-ui.md`
 
@@ -8,7 +10,7 @@ Imagine a seguinte situação:
 
 > Uma empresa quer construir um sistema. Antes de programar, como sabemos o que precisa ser feito?
 
-Parece óbvio, mas essa é a pergunta que mais projetos de software erram na prática. É extremamente comum uma equipe passar semanas programando algo que, no final, não resolve o problema de ninguém — porque ninguém parou para definir com clareza qual era o problema antes de sair codando.
+Parece óbvio, mas essa é a pergunta que mais projetos de software erram na prática. É extremamente comum uma equipe passar semanas programando algo que, no final, não resolve o problema de ninguém, porque ninguém parou para definir com clareza qual era o problema antes de sair codando.
 
 **Engenharia de Requisitos** é justamente a etapa de descobrir e escrever, com clareza, o que um sistema precisa fazer, antes de começar a construir.
 
@@ -18,7 +20,7 @@ Sem requisitos claros:
 
 - Cada pessoa da equipe entende "o projeto" de um jeito diferente.
 - É fácil construir funcionalidades que ninguém pediu, enquanto o que realmente importa fica de fora.
-- Fica difícil saber quando o projeto está "pronto" — pronto para quê, exatamente?
+- Fica difícil saber quando o projeto está "pronto". Pronto para quê, exatamente?
 
 Com requisitos bem definidos, você tem um documento de referência: sempre que surgir dúvida sobre "isso deveria fazer parte do projeto?", a resposta está ali.
 
@@ -26,7 +28,7 @@ Com requisitos bem definidos, você tem um documento de referência: sempre que 
 
 ### Problema
 
-É a situação insatisfatória que existe **antes** do projeto — a dor que motivou a ideia. Um problema não é uma solução disfarçada. "Os alunos não têm um app" não é um problema, é já uma solução (o app). O problema por trás poderia ser: "alunos têm dificuldade de encontrar grupos de estudo".
+É a situação insatisfatória que existe **antes** do projeto: a dor que motivou a ideia. Um problema não é uma solução disfarçada. "Os alunos não têm um app" não é um problema, é já uma solução (o app). O problema por trás poderia ser: "alunos têm dificuldade de encontrar grupos de estudo".
 
 ### Necessidade
 
@@ -45,7 +47,7 @@ Com requisitos bem definidos, você tem um documento de referência: sempre que 
 
 ### Requisito funcional
 
-Descreve **o que o sistema faz** — uma ação, uma funcionalidade.
+Descreve **o que o sistema faz**: uma ação, uma funcionalidade.
 
 Exemplos:
 - O sistema deve permitir que o usuário crie uma conta.
@@ -54,7 +56,7 @@ Exemplos:
 
 ### Requisito não funcional
 
-Descreve **como** o sistema deve se comportar — qualidades, restrições, características gerais que não são uma ação específica.
+Descreve **como** o sistema deve se comportar: qualidades, restrições, características gerais que não são uma ação específica.
 
 Exemplos:
 - O sistema deve carregar a lista de grupos em menos de 2 segundos.
@@ -102,13 +104,13 @@ A diferença pode parecer pequena, mas é importante: a história de usuário fo
 - Como estudante, quero encontrar grupos da minha matéria, para conseguir estudar com outras pessoas.
 - Como estudante, quero criar um grupo novo quando nenhum existir ainda, para reunir colegas interessados no mesmo assunto.
 
-Repare que cada história de usuário está diretamente ligada a um dos requisitos funcionais acima — elas não são inventadas soltas, são a mesma informação vista de um ângulo mais próximo de quem vai usar o sistema.
+Repare que cada história de usuário está diretamente ligada a um dos requisitos funcionais acima; elas não são inventadas soltas, são a mesma informação vista de um ângulo mais próximo de quem vai usar o sistema.
 
 ## Como fazer
 
 1. **Escreva o problema em uma frase.** Se não conseguir resumir em uma frase, provavelmente ainda não está claro o suficiente.
-2. **Identifique o usuário principal** — se houver mais de um tipo de usuário, identifique todos, mas escolha um como foco principal desta semana.
-3. **Liste de 3 a 6 requisitos funcionais.** Comece pelos mais essenciais — o que o sistema *precisa* fazer para resolver o problema, sem o qual ele não faz sentido.
+2. **Identifique o usuário principal**: se houver mais de um tipo de usuário, identifique todos, mas escolha um como foco principal desta semana.
+3. **Liste de 3 a 6 requisitos funcionais.** Comece pelos mais essenciais: o que o sistema *precisa* fazer para resolver o problema, sem o qual ele não faz sentido.
 4. **Identifique 1 a 3 requisitos não funcionais** relevantes para o seu projeto (desempenho, segurança, acessibilidade, compatibilidade, etc.).
 5. **Transforme os requisitos funcionais principais em histórias de usuário**, usando o formato `Como [usuário], quero [ação], para [benefício]`.
 6. **Escreva tudo isso em `docs/requisitos.md` e `docs/historias-de-usuario.md`.**
@@ -146,21 +148,21 @@ Como [usuário], quero [ação], para [benefício].
 Como [usuário], quero [ação], para [benefício].
 ```
 
-## 🌱 Se você está começando
+## Se você está começando
 
-É normal, na primeira tentativa, escrever requisitos vagos demais ("o sistema deve ser bom") ou específicos demais demais ("o botão deve ser azul #1E90FF" — isso é decisão de design, não requisito). Um bom teste: leia seu requisito e pergunte "dá para saber se isso foi cumprido ou não?". Se a resposta for clara, o requisito está bem escrito.
+É normal, na primeira tentativa, escrever requisitos vagos demais ("o sistema deve ser bom") ou específicos demais ("o botão deve ser azul #1E90FF"; isso é decisão de design, não requisito). Um bom teste: leia seu requisito e pergunte "dá para saber se isso foi cumprido ou não?". Se a resposta for clara, o requisito está bem escrito.
 
-## ⚡ Se você já tem experiência
+## Se você já tem experiência
 
 Alguns pontos para aprofundar:
 
 - **Priorização.** Nem todo requisito tem o mesmo peso. Marque quais são essenciais para uma primeira versão (MVP) e quais são "desejáveis, mas não urgentes". Uma técnica simples é o método **MoSCoW**: Must have, Should have, Could have, Won't have (por enquanto).
 - **Rastreabilidade.** Cada requisito deveria poder ser conectado a uma história de usuário e, futuramente, a uma tela do protótipo e a uma tarefa/issue no GitHub. Isso evita "requisitos órfãos" que ninguém sabe de onde vieram.
-- **Ambiguidade é o inimigo.** Releia seus requisitos como se fosse outra pessoa lendo pela primeira vez — existe alguma frase que poderia ser interpretada de duas formas diferentes?
+- **Ambiguidade é o inimigo.** Releia seus requisitos como se fosse outra pessoa lendo pela primeira vez: existe alguma frase que poderia ser interpretada de duas formas diferentes?
 
 ## Atividade
 
-Escolha uma funcionalidade central do seu projeto (ou, se ainda não tem um projeto definido, escolha uma ideia simples — por exemplo, um sistema para organizar os próprios encontros do Coffee & Code) e:
+Escolha uma funcionalidade central do seu projeto (ou, se ainda não tem um projeto definido, escolha uma ideia simples, por exemplo, um sistema para organizar os próprios encontros do Coffee & Code) e:
 
 1. Escreva o problema que ela resolve, em uma frase.
 2. Escreva de 3 a 5 requisitos funcionais relacionados a essa funcionalidade.
@@ -168,7 +170,7 @@ Escolha uma funcionalidade central do seu projeto (ou, se ainda não tem um proj
 4. Transforme os requisitos funcionais principais em 2 a 3 histórias de usuário, no formato `Como [usuário], quero [ação], para [benefício]`.
 5. Salve tudo em `docs/requisitos.md` e `docs/historias-de-usuario.md`, faça commit e push.
 
-Essas histórias de usuário vão ser exatamente a base para o protótipo que você vai criar no módulo de Figma — não são um exercício isolado.
+Essas histórias de usuário vão ser exatamente a base para o protótipo que você vai criar no módulo de Figma; não são um exercício isolado.
 
 **Checklist do módulo:**
 
@@ -181,4 +183,4 @@ Essas histórias de usuário vão ser exatamente a base para o protótipo que vo
 
 ---
 
-**Próximo módulo:** `05-ux-ui.md` — vamos pensar em como o usuário vai realmente usar isso.
+**Próximo módulo:** `05-ux-ui.md`, vamos pensar em como o usuário vai realmente usar isso.

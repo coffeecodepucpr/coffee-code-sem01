@@ -1,8 +1,10 @@
-# 00 — Comece aqui
+# 00 | Comece aqui
 
-Bem-vindo(a) à Semana 01 do **Coffee & Code** ☕
+Português · [English](../docs-eng/00-start-here.md)
 
-Este documento é o seu ponto de partida. Leia ele inteiro antes de abrir qualquer outro módulo — ele explica o que você vai construir, por que os assuntos da semana estão na ordem em que estão, e o que vai precisar entregar no final.
+Bem-vindo(a) à Semana 01 do **Coffee & Code**
+
+Este documento é o seu ponto de partida. Leia ele inteiro antes de abrir qualquer outro módulo; ele explica o que você vai construir, por que os assuntos da semana estão na ordem em que estão, e o que vai precisar entregar no final.
 
 ---
 
@@ -17,11 +19,11 @@ Ao longo desta semana, você vai dar os primeiros passos de um projeto de softwa
 - Documentar tudo isso dentro do repositório do projeto, em uma pasta `/docs`.
 - Organizar esse repositório no **GitHub**, usando **Git** para versionar o trabalho.
 
-No fim da semana, você não vai ter uma linha de código funcional — e está tudo bem. Você vai ter algo mais importante para começar bem: **clareza sobre o que construir e por quê**.
+No fim da semana, você não vai ter uma linha de código funcional, e está tudo bem. Você vai ter algo mais importante para começar bem: **clareza sobre o que construir e por quê**.
 
 ## Por que essa ordem
 
-Um erro comum de quem está começando é abrir o editor de código no primeiro dia e sair digitando. O problema é que, sem responder antes "para quem eu estou construindo isso?" e "o que essa pessoa precisa fazer?", é muito fácil construir a coisa errada — ou construir a coisa certa de um jeito confuso.
+Um erro comum de quem está começando é abrir o editor de código no primeiro dia e sair digitando. O problema é que, sem responder antes "para quem eu estou construindo isso?" e "o que essa pessoa precisa fazer?", é muito fácil construir a coisa errada, ou construir a coisa certa de um jeito confuso.
 
 Todo projeto de software real segue (de forma mais ou menos explícita) este caminho:
 
@@ -29,13 +31,13 @@ Todo projeto de software real segue (de forma mais ou menos explícita) este cam
 problema → requisitos → usuário → interface → documentação → organização do projeto → código
 ```
 
-Essa semana existe para você viver esse caminho uma vez, do começo, em um projeto pequeno — para que, quando chegar a hora de programar (semana 02 em diante), você já saiba o que está construindo e por quê.
+Essa semana existe para você viver esse caminho uma vez, do começo, em um projeto pequeno, para que, quando chegar a hora de programar (semana 02 em diante), você já saiba o que está construindo e por quê.
 
 ## Mapa da semana
 
 ![Mapa da Semana 01: ideia, requisitos, histórias de usuário, UX/UI, protótipo no Figma, documentação em /docs e GitHub, em sequência](./assets/mapa-semana.svg)
 
-Cada seta desse mapa é um módulo desta semana. Nenhum módulo existe sozinho — cada um alimenta o próximo.
+Cada seta desse mapa é um módulo desta semana. Nenhum módulo existe sozinho; cada um alimenta o próximo.
 
 ## Ordem dos módulos
 
@@ -56,21 +58,21 @@ Ou seja: primeiro você monta a "estante" (Git, GitHub, Markdown) onde o trabalh
 
 ## Ferramentas que você vai usar
 
-- **Git** — instalado na sua máquina ([git-scm.com](https://git-scm.com))
-- **GitHub** — conta gratuita ([github.com](https://github.com))
-- **Figma** — conta gratuita ([figma.com](https://figma.com)), pode ser usado direto no navegador
+- **Git**: instalado na sua máquina ([git-scm.com](https://git-scm.com))
+- **GitHub**: conta gratuita ([github.com](https://github.com))
+- **Figma**: conta gratuita ([figma.com](https://figma.com)), pode ser usado direto no navegador
 - Um editor de texto qualquer para escrever Markdown (VS Code é uma boa escolha, mas não é obrigatório)
 
 Você não precisa instalar nada além de Git. GitHub e Figma funcionam no navegador.
 
 ## Duas trilhas, um projeto só
 
-Ao longo dos módulos você vai ver dois símbolos:
+Ao longo dos módulos você vai ver dois tipos de seção:
 
-- 🌱 **Se você está começando** — explicações mais detalhadas, sem pressa, sem assumir que você já viu aquilo antes.
-- ⚡ **Se você já tem experiência** — aprofundamentos, boas práticas extras e desafios para quem já manja do básico.
+- **Se você está começando**: explicações mais detalhadas, sem pressa, sem assumir que você já viu aquilo antes.
+- **Se você já tem experiência**: aprofundamentos, boas práticas extras e desafios para quem já manja do básico.
 
-Isso não significa dois cursos diferentes. Todo mundo trabalha **no mesmo projeto**. A diferença é só o nível de profundidade em cada parte. Se você é veterano, ainda vale ler as partes 🌱 — muita gente experiente pula etapas de fundamentos e sente falta delas depois.
+Isso não significa dois cursos diferentes. Todo mundo trabalha **no mesmo projeto**. A diferença é só o nível de profundidade em cada parte. Se você é veterano, ainda vale ler as partes para iniciantes: muita gente experiente pula etapas de fundamentos e sente falta delas depois.
 
 ## O que você vai entregar no final
 
@@ -85,7 +87,7 @@ Não precisa estar perfeito. Precisa existir e fazer sentido com o que você def
 
 ## Como estudar
 
-O Coffee & Code é 100% online, e cada módulo foi escrito para ser autossuficiente: você pode estudar no seu ritmo, sem depender de estar em uma call. Os encontros semanais, também online, existem para tirar dúvidas e mostrar o que você produziu — não para "dar a aula".
+O Coffee & Code é 100% online, e cada módulo foi escrito para ser autossuficiente: você pode estudar no seu ritmo, sem depender de estar em uma call. Os encontros semanais, também online, existem para tirar dúvidas e mostrar o que você produziu, não para "dar a aula".
 
 Sugestão de ritmo (ajuste ao seu tempo disponível):
 

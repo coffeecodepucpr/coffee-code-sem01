@@ -1,6 +1,8 @@
-# Cheat Sheet — Git & GitHub
+# Cheat Sheet | Git & GitHub
 
-> Referência rápida dos comandos de Git e GitHub usados na Semana 01. Não é conteúdo novo — é só um resumo visual do que já foi explicado em `01-git.md` e `02-github.md`. Deixe esta aba aberta enquanto pratica.
+Português · [English](../docs-eng/cheatsheet-git-github.md)
+
+> Referência rápida dos comandos de Git e GitHub usados na Semana 01. Não é conteúdo novo; é só um resumo visual do que já foi explicado em `01-git.md` e `02-github.md`. Deixe esta aba aberta enquanto pratica.
 
 ![Cheat sheet com os comandos de Git (init, status, add, commit, log) à esquerda e GitHub (clone, remote add, push, pull, branch, checkout) à direita, cada um com uma explicação curta](./assets/cheatsheet-git-github.svg)
 
